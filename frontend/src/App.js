@@ -8,11 +8,14 @@ import "./scss/main.scss";
 const App = () => {
   const [tasks, setTasks] = useState([]);
 
-  useEffect(async () => {
-    const tasksData = await taskFindAll();
-    if (tasksData) {
-      setTasks(tasksData);
-    }
+  useEffect(() => {
+    const setup = async () => {
+      const tasksData = await taskFindAll();
+      if (tasksData) {
+        setTasks(tasksData);
+      }
+    };
+    setup();
   }, []);
 
   return (

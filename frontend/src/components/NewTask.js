@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
-import { taskCreate, taskFindAll } from "../helpers/task";
+import { taskCreate } from "../helpers/task";
 
-const NewTask = ({ setTasks, handleChange }) => {
+const NewTask = ({ handleChange }) => {
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
     const create = await taskCreate(data);
