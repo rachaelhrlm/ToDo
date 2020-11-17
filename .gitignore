@@ -1,0 +1,9 @@
+# dependencies
+/frontend/node_modules
+/backend/node_modules
+
+# credentials
+backend/config/db.config.js
+
+# misc
+.DS_Store
