@@ -1,0 +1,26 @@
+.task,
+.completed-task {
+  color: $main;
+  margin: 6px auto;
+
+  .check {
+    background-color: $white;
+    text-align: center;
+    border-right: 3px solid $accent;
+    border-radius: 5px;
+    cursor: pointer;
+
+    .icon {
+      margin-top: 12px;
+    }
+  }
+  .details {
+    background-color: $white;
+    border-left: 3px solid $accent;
+    border-radius: 5px;
+  }
+}
+
+.completed-task {
+  opacity: 0.5;
+}

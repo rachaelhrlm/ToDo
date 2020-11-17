@@ -1,0 +1,13 @@
+body {
+  background-color: $accent;
+}
+
+* {
+  outline: 0;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 30px;
+  max-height: 100px;
+}
