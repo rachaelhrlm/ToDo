@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquare, faCheckSquare } from "@fortawesome/free-regular-svg-icons";
 import { taskToggleStatus } from "../helpers/task";
+import TaskAccordian from "./TaskAccordian";
 
 const Task = ({ task, handleChange }) => {
   const [completed, setCompleted] = useState(task.completed);
@@ -30,11 +31,8 @@ const Task = ({ task, handleChange }) => {
           size="2x"
         />
       </div>
-      <div className="col-xs-8 col-sm-10 col-md-11 details">
-        <h3>
-          {task.id}. {task.description}
-        </h3>
-      </div>
+
+      <TaskAccordian task={task} />
     </div>
   );
 };

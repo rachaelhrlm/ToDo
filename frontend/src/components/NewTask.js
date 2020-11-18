@@ -16,17 +16,13 @@ const NewTask = ({ handleChange }) => {
       <div className="col-xs-11 col-md-10 col-sm-8">
         <textarea
           className="input"
-          placeholder="Enter new task"
+          placeholder="Enter task"
           name="description"
           ref={register}
         />
       </div>
       <div className="col-xs-11 col-md-2 col-sm-3">
-        <button
-          className="button"
-          type="submit"
-          onClick={handleSubmit(onSubmit)}
-        >
+        <button type="submit" onClick={handleSubmit(onSubmit)}>
           Submit
         </button>
       </div>

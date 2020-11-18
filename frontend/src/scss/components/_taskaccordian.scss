@@ -1,0 +1,23 @@
+.task-accordian {
+  background-color: $white;
+  border-radius: 5px;
+  color: $main;
+  border-left: 3px solid $accent;
+
+  .acc-header {
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .acc-content {
+    display: none;
+  }
+
+  textarea {
+    margin-left: -5px;
+  }
+  .button2 {
+    background-color: $main;
+    color: $white;
+  }
+}

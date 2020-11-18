@@ -23,9 +23,6 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact>
-            Hello!
-          </Route>
-          <Route path="/tasks" exact>
             <AllTasks tasks={tasks} setTasks={setTasks} />
           </Route>
         </Switch>
