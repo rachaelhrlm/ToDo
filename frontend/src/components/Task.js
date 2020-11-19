@@ -32,7 +32,7 @@ const Task = ({ task, handleChange }) => {
         />
       </div>
 
-      <TaskAccordian task={task} />
+      <TaskAccordian task={task} handleChange={handleChange} />
     </div>
   );
 };

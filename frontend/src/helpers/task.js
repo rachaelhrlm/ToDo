@@ -25,6 +25,28 @@ export const taskCreate = async (task) => {
   }
 };
 
+export const taskUpdate = async (task) => {
+  try {
+    const res = await axios.put(server + `${task.id}`, {
+      description: task.description,
+      completed: task.completed,
+      id: task.id,
+    });
+    return res.data;
+  } catch {
+    return null;
+  }
+};
+
+export const taskDelete = async (id) => {
+  try {
+    const res = await axios.delete(server + `${id}`);
+    return res.data;
+  } catch {
+    return null;
+  }
+};
+
 export const taskToggleStatus = async (task) => {
   try {
     const res = await axios.put(server + `${task.id}/status/`, {

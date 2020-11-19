@@ -42,7 +42,7 @@ Task.findAll = (result) => {
 Task.update = (id, task, result) => {
   dbConn.query(
     "UPDATE task SET description=?, completed=? WHERE id=?",
-    [task.completed ? 0 : 1, id],
+    [task.description, task.completed, id],
     (err, res) => {
       if (err) {
         console.log("error: ", err);
